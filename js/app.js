@@ -81,6 +81,12 @@ filtroMarca.addEventListener ('click', ()=> {
     buscador.value = ''
 })
 
+filtroMarca.addEventListener ('touchstart', ()=> { 
+    filtrarMarca()
+    // Una vez que se selecciona una marca lo que esté escrito en el buscador se borra
+    buscador.value = ''
+})
+
 function filtrarMarca () {
     // Busco en el array productos aquellos productos que su atributo "filtro" coincida con el selccionado
     let marcaFiltrada = productos.filter((productos => productos.filtro === filtroMarca.value))
