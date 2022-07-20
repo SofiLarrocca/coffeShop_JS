@@ -331,6 +331,7 @@ btnFinalizar.addEventListener ("click", ()=> {
         //Estilos detalleCart
         detalleCart.style.display = 'flex'
         detalleCart.style.alignItems = 'center'
+        detalleCart.className = 'cart-formulario'
     })
 })
 

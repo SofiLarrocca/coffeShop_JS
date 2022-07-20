@@ -455,6 +455,14 @@ footer {
 }
 
 @media screen and (max-width: 580px) {
+    nav { 
+        flex-wrap: wrap;
+    }
+
+    nav a { 
+        margin-left: 1.5rem;
+    }
+
     h1 { 
         width: 30%;
         font-size: 1.8rem;
@@ -476,6 +484,7 @@ footer {
 
     .titulo { 
         font-size: 1.8rem;
+        flex-wrap: wrap;
     }
 
     .buscador { 
@@ -487,10 +496,17 @@ footer {
 
     .productos_buscar input { 
         border: 0px;
+        width: 100px;
     }
 
     .contenedor_productos { 
         margin-bottom: 0.5rem;
+    }
+
+    #contador-cart { 
+        left: 12px;
+        font-size: 0.5rem;
+        padding: 2px 8px;
     }
 
     .cart-iconos { 
@@ -533,9 +549,5 @@ footer {
     .img-cart { 
         max-width: 3.5rem;
         margin-right: 0.5rem;
-    }
-
-    .bi::before{ 
-        font-size: 0.9rem;
     }
 }
