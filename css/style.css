@@ -443,6 +443,7 @@ footer {
     .titulo { 
         padding-top: 1rem;
         font-size: 2rem;
+        flex-wrap: wrap;
     }
 
     .filtro { 

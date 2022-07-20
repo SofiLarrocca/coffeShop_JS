@@ -87,6 +87,7 @@ filtroMarca.addEventListener ('touchstart', ()=> {
     buscador.value = ''
 })
 
+
 function filtrarMarca () {
     // Busco en el array productos aquellos productos que su atributo "filtro" coincida con el selccionado
     let marcaFiltrada = productos.filter((productos => productos.filtro === filtroMarca.value))
@@ -105,6 +106,10 @@ function filtrarMarca () {
 let filtroPrecio = document.getElementById ('order-precio')
 
 filtroPrecio.addEventListener ('click', ()=> { 
+    ordenarPrecio()
+})
+
+filtroPrecio.addEventListener ('touchstart', ()=> { 
     ordenarPrecio()
 })
 
